@@ -299,16 +299,14 @@ attack, guard, divineは特定の役職の場合のみ呼ばれるメソッド�
 
 発言する内容（String型）を返すメソッドです．
 whisperは人狼の場合のみ呼ばれます．
-
-* talk()：村全体に対して発言する内容を返します．
 本大会で有効な発言内容は
 org.aiwolf.client.lib.ContentBuilderで生成できるStringのみです
 （詳しくは「5.3 発言可能な内容」を参照）．
+
+* talk()：村全体に対して発言する内容を返します．
 * whisper()：人狼のプレイヤーのみ呼ばれるメソッドです．
 人狼だけに対して発言する内容を返します．
 この発言内容は人狼以外のプレイヤーに公開されることはありません．
-本大会で有効な発言内容は
-org.aiwolf.client.lib.ContentBuilderで生成できるStringのみです．
 
 #### 命名メソッド（getName）
 
