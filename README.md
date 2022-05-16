@@ -115,13 +115,14 @@
 言い換えると，1セットの100ゲームの間は同じインスタンスなのでゲームをまたいだ情報のやり取りが可能で，
 さらに番号も固定（指定席）です．
 
-### エージェント改良期間と予備対戦（デイリーコンテスト）
+### エージェント更新可能期間と予備対戦（デイリーコンテスト）
 
 参加チームは，エージェント登録から予選開始までの間と，
 予選終了から本戦開始までの間，
 登録エージェントを更新することができます．
-このエージェント改良期間には，
-すべての登録エージェントによる予備対戦（デイリーコンテスト）[^1]が開催されます．
+エージェント更新可能期間中，
+対象エージェント（予選前はすべてのエージェント，予選後は予選通過エージェント）による
+予備対戦（デイリーコンテスト）[^1]が開催されます．
 予備対戦では，各チームが少なくとも1セット(100ゲーム)を行い，
 エージェントがエラー無く動いたチームのみが次の予備対戦に参加できます．
 エラーで失格となったチームは，修正したエージェントを新たに登録すれば，
@@ -133,7 +134,7 @@
 エージェントの改良に予備対戦をご利用ください．**
 </span>
 
-[^1]:http://aiwolf.org/daily15/index-j.html （15人村）, http://aiwolf.org/daily05/index-j.html （5人村）
+[^1]:[http://aiwolf.org/daily15/index-j.html](http://aiwolf.org/daily15/index-j.html)（15人村）,[http://aiwolf.org/daily05/index-j.html](http://aiwolf.org/daily05/index-j.html)（5人村）
 
 
 ### 予選
@@ -156,7 +157,8 @@
 ### 参加登録
 
 本大会に参加を希望される方（チーム）は，
-人狼知能大会のウェブサイト( http://contest.aiwolf.org/ )にアクセスし，
+人狼知能大会のウェブサイト
+([http://contest.aiwolf.org/](http://contest.aiwolf.org/))にアクセスし，
 まずはアカウントを作成してください．
 アカウントの作成をもって参加登録となります．
 
@@ -392,7 +394,7 @@ Java以外の言語はPython，C#(.NET)を想定しています．
 これらの言語で参加する場合は，それぞれのライブラリを参照して下さい．
 独自のライブラリでもTCP/IP接続ができ，
 エージェントが正しく動けば参加することができますので
-事前に運営側にご相談(gm@googlegroups.com)ください．
+事前に運営側にご相談([gm@googlegroups.com](gm@googlegroups.com))ください．
 
 なお，対戦サーバのOSはLinuxなので，
 その点に注意して，特殊な環境に特化したエージェントでの参加はご遠慮下さい．
@@ -401,13 +403,14 @@ Java以外の言語はPython，C#(.NET)を想定しています．
 また，対戦サーバと同環境のdockerイメージ[^2]を提供しています．
 エージェントの検証にお役立てください．
 
-[^2]:https://github.com/users/aiwolf/packages/container/package/aiwolf
+[^2]:[https://github.com/users/aiwolf/packages/container/package/aiwolf](https://github.com/users/aiwolf/packages/container/package/aiwolf)
 
 ## 更新
 
 レギュレーションは予告なく変更される可能性があります．
-変更された場合はプロジェクトページ( http://aiwolf.org )，
-開発者メーリングリスト(aiwolfdev@googlegroups.com)
+変更された場合はプロジェクトページ
+([http://aiwolf.org](http://aiwolf.org))，
+開発者メーリングリスト([aiwolfdev@googlegroups.com](aiwolfdev@googlegroups.com))
 あるいはTwitterアカウント(@aiwolf_org)で告知いたしますので，
 登録あるいはフォローをしておいてください．
 
