@@ -1,4 +1,4 @@
-# CompetitionProtocolDivision
+# The 4th International AI Werewolf Competition
 
-- [English page](en/regulation.md)
-- [Japanese page](ja/regulation.md)
+- [Regulation](en/regulation.md)
+- [レギュレーション](ja/regulation.md)
