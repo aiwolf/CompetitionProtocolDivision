@@ -1,8 +1,12 @@
 # 4th International AIWolf Competition Regulation
 
-2022/05/17 Ver. 1.1.2-en
+2022/06/06 Ver. 1.2.0-en-rc0
 
 ## Werewolf game rules for the 4nd International AIWolf Competition
+
+### No-Reveal Game
+
+In this competition, the player's role is not showed upon its death.
 
 ### Number and Types of Roles
 
@@ -21,8 +25,11 @@ There are four roles aligned with the villager team: Villager, Seer, Medium, and
 
 - **Villager**: Has no special abilities.
 - **Medium**: When a player is eliminated from the game by voting, the Medium is informed of whether that player was a werewolf or a human in the following day. The watcher receives no information if there was not a vote in the previous day.
-- **Seer**: At the end of each day, the seer can choose one player to “Divine.” The seer will be informed whether this player is a werewolf or a human. If the seer’s target has already been eliminated in the past, the seer will receive no information.
-- **Bodyguard**: At the end of each day, the bodyguard can choose one other player to “Guard.” That player is not affected by the werewolves’ attack. The bodyguard does not receive any feedback about the result of this action (i.e., the bodyguard will not know if the defense successfully protected an attack or the werewolves chose not to attack).
+- **Seer**: At the end of each day (including the first day), the seer can choose one player to “Divine.” The seer will be informed whether this player is a werewolf or a human. If the seer’s target has already been eliminated in the past, the seer will receive no information.
+The seer can know the latest elimimated player before deciding the target of divination.
+- **Bodyguard**: At the end of each day, the bodyguard can choose one other player to “Guard.” That player is not affected by the werewolves’ attack. 
+If the bodyguard chooses the dead as the target of his guard, nothing will happen.
+The bodyguard can know the latest elimimated player before deciding who to guard.
 
 #### Roles of the Werewolf Team:
 
@@ -49,13 +56,21 @@ The werewolves can use the “whisper” channel after the elimination vote if f
 
 If there is only one werewolf in the game, no whisper takes place. Please be careful that the server will not send whisper requests to the agent in this situation (for example, the whisper method in the sample Java agent does not get called).
 
-### Voting and Revoting
+### Voting and Revoting for Elimination
 
-The vote to eliminate a player from the game happens at the end of the day phase (after the talk phase). Werewolves, Seers, and Bodyguards can use the information of which agent was eliminated by voting when making their decisions during the night phase.
+The vote to eliminate a player from the game happens at the end of the day phase (after the talk phase).
+If a player votes for an invalid player, such as a dead player, the vote will be randomly chosen.
+Werewolves, Seers, and Bodyguards can use the information of which agent was eliminated by voting when making their decisions during the night phase.
 
 If there is a tie, the vote is repeated one time. In this case, there is no extra conversation. If there is still a tie in the second vote, then the eliminated player is chosen randomly from the tied players. During a revote, all players have a vote, and they can vote in anyone, not just the players tied in the first vote.
 
-The werewolf attack vote happens similarly. One revote is allowed in case of a tie, and there is no whisper before the revote.
+### Voting and Revoting for Attack
+
+If there is a tie in werewolf attack vote, one revote is allowed and there is no whisper before the revote.
+If there is still a tie in the second vote, then the attacked player is chosen randomly from the tied players.
+
+If a werewolf player votes for an invalid player, such as a dead human, the vote will be invalid.
+If the votes of all werewolves are invalid, the target of the attack will be randomly chosen from the alive humans.
 
 ## Preliminary Contest and Final Contest
 
@@ -69,9 +84,23 @@ We define a “Game Set” in this competition as 100 games played among the sam
 
 One instance of each agent will be created and used for the entirety of one set. This means that, within one set, each agent will have the same `AgentId`, and can maintain state information between games. Agent instances will be destroyed between sets.
 
-### Preparatory Games (Daily Contest):
+### Agent Update Period and Preparatory Games (Daily Contest):
 
-The participating teams can join preparatory games (Daily Contests) before the Preliminary and Final contests. If the team registers an agent, the agent will be included in the preparatory games, several times per day. In the preparatory games, each team will play in at least one Game Set, and will be able to check if their agent is playing without errors. It is possible to download the game log of the preparatory games that the team has participated in. ***Please use the preparatory games to verify that your agent works correctly in the server environment.***
+Participating teams can update their registered agents
+between the agent registration and the start of the preliminary contest,
+and between the end of the preliminary contest and the start of the final contest.
+During the agent update period,
+preparatory games (Daily Contest) will be held for the target agents
+(all agents before the preliminary contest,
+the passed agents after the preliminary contest).
+In the preparatory games, each team will play in at least one Game Set,
+and only the team of which agent ran without error
+can participate in the next preparatory games.
+The team disqualified due to an error can rejoin the preparatory games
+by registering an improved agent.
+It is possible to download the game log of the preparatory games that the team has participated in
+and the agent log containing the texts that the agent writes into stdout.
+***Please use the preparatory games to verify that your agent works correctly in the server environment, and to improve your agent.***
 
 You can see the Daily Contest Results for [15 player games](http://aiwolf.org/daily15/index.html) and for [5 player games](http://aiwolf.org/daily05/index.html).
 
@@ -126,6 +155,24 @@ Submit a zip file. In the root directory of your zip file, you should include th
 In addition to the files described above, teams that are selected to the Final Contest must submit the source code of their agents, and a document describing the algorithm used. Even teams that submitted python agent must re-submit their scripts at this stage. The method of submission for the source code and algorithm document will be explained to the finalists after the preliminary contest.
 
 Failing to submit the source code or algorithm document will disqualify a finalist team.
+
+## Open Source License
+
+The source code of the agent will be released as open source software after the competition.
+Therefore, please apply an open source license to your source code
+that allows free distribution of the source code,
+and freedom of copying, modification, and redistribution of the source code.
+When you fill out the participation confirmation form,
+you will be asked to answer that license.
+For reference, the most popular open source licenses in recent years
+are Apache License 2.0 and MIT License.
+If you are wondering what to choose,
+it will be a good idea to choose the MIT License.
+
+The "source code" in this competition refers to
+the source code of the agent program written in Java, C\#, Python, etc.
+and the setting parameters of the easy-to-use
+[AIWolf agent generator](https://aiwolf-generator.herokuapp.com/).
 
 ## Forbidden activities
 
@@ -254,4 +301,5 @@ These regulations are subject to change at any time. Changes will be announced a
 2020/03/29 -- ver 1.2.0 -- Updated rules for 2020 (non-synchronous broadcast, Java 11)  
 2022/05/05 -- ver 2022 1.1.0 -- Updated rules for 2022, to parity with Japanese version 2022 1.1. Folded section 1.5 into 1.2 (removed section 1.5), highlighted parts about the preparatory games, added information about commandline parameters, clarified other sections of the text.  
 2022/05/15 -- ver 1.1.1 -- Minor change to C# file explanation: Removed some redundant text  
-2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format
+2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format  
+2022/06/06 -- ver 1.2.0-en-rc0 -- Add description of open source license.
