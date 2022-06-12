@@ -1,6 +1,6 @@
-# 4th International AIWolf Competition Regulation
+# 4th International AIWolf Competition Protocol Division Regulation
 
-2022/06/06 Ver. 1.2.0-en-rc0
+2022/06/06 Ver. 1.2.0-en
 
 ## Werewolf game rules for the 4nd International AIWolf Competition
 
@@ -156,7 +156,7 @@ In addition to the files described above, teams that are selected to the Final C
 
 Failing to submit the source code or algorithm document will disqualify a finalist team.
 
-## Open Source License
+### Open Source License
 
 The source code of the agent will be released as open source software after the competition.
 Therefore, please apply an open source license to your source code
@@ -302,4 +302,4 @@ These regulations are subject to change at any time. Changes will be announced a
 2022/05/05 -- ver 2022 1.1.0 -- Updated rules for 2022, to parity with Japanese version 2022 1.1. Folded section 1.5 into 1.2 (removed section 1.5), highlighted parts about the preparatory games, added information about commandline parameters, clarified other sections of the text.  
 2022/05/15 -- ver 1.1.1 -- Minor change to C# file explanation: Removed some redundant text  
 2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format  
-2022/06/06 -- ver 1.2.0-en-rc0 -- Add description of open source license.
+2022/06/06 -- ver 1.2.0-en -- Add description of open source license.
