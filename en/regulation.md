@@ -1,6 +1,6 @@
 # 4th International AIWolf Competition Protocol Division Regulation
 
-2022/06/06 Ver. 1.2.0-en
+2022/06/12 Ver. 1.3.0-en
 
 ## Werewolf game rules for the 4nd International AIWolf Competition
 
@@ -186,6 +186,9 @@ During the competition, the following points are forbidden, and may be cause for
 - Starting new processes;
 - Taking more than 100ms to respond to a request from the server
 - Submitting the same agent as another team (“similarity” as judged by the organizers. Both teams will be disqualified)
+- Submitting the same agent as the published agent
+such as the past participant's agent and sample agent
+(“similarity” as judged by the organizers.)
 
 ## About running player programs (Java)
 
@@ -301,5 +304,6 @@ These regulations are subject to change at any time. Changes will be announced a
 2020/03/29 -- ver 1.2.0 -- Updated rules for 2020 (non-synchronous broadcast, Java 11)  
 2022/05/05 -- ver 2022 1.1.0 -- Updated rules for 2022, to parity with Japanese version 2022 1.1. Folded section 1.5 into 1.2 (removed section 1.5), highlighted parts about the preparatory games, added information about commandline parameters, clarified other sections of the text.  
 2022/05/15 -- ver 1.1.1 -- Minor change to C# file explanation: Removed some redundant text  
-2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format  
-2022/06/06 -- ver 1.2.0-en -- Add description of open source license.
+2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format 
+2022/06/06 -- ver 1.2.0-en -- Add description of open source license. 
+2022/06/12 -- ver 1.3.0-en -- Modify the forbidden activities.
