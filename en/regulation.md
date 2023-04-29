@@ -1,8 +1,8 @@
-# 4th International AIWolf Competition Protocol Division Regulation
+# 5th International AIWolf Competition Protocol Division Regulation
 
-2022/06/12 Ver. 1.3.0-en
+Version 2023.04.29-en
 
-## Werewolf game rules for the 4nd International AIWolf Competition
+## Werewolf game rules for the 5th International AIWolf Competition
 
 ### No-Reveal Game
 
@@ -192,7 +192,7 @@ such as the past participant's agent and sample agent
 
 ## About running player programs (Java)
 
-In this section, we explain how to prepare an agent based on the JAVA sample agent. The process is similar for C# and Python. The 4th competition will use [platform version 0.6.x](http://aiwolf.org/en/server). An agent can participate by implementing the `org.aiwolf.common.data.Player` interface defined in the AIWolfCommon.jar.
+In this section, we explain how to prepare an agent based on the JAVA sample agent. The process is similar for C# and Python. The 5th competition will use [platform version 0.6.x](http://aiwolf.org/en/server). An agent can participate by implementing the `org.aiwolf.common.data.Player` interface defined in the AIWolfCommon.jar.
 
 ### Methods that need to be implemented in the Player Interface (Java)
 
@@ -299,11 +299,4 @@ These regulations are subject to change at any time. Changes will be announced a
 
 ## Change History
 
-2019/02/09 -- ver 1.0.0 -- Translated from the 4th AI Wolf competition  
-2019/05/09 -- ver 1.1.0 -- Clarification about the practice contest, clarification about reading from files, other minor changes.  
-2020/03/29 -- ver 1.2.0 -- Updated rules for 2020 (non-synchronous broadcast, Java 11)  
-2022/05/05 -- ver 2022 1.1.0 -- Updated rules for 2022, to parity with Japanese version 2022 1.1. Folded section 1.5 into 1.2 (removed section 1.5), highlighted parts about the preparatory games, added information about commandline parameters, clarified other sections of the text.  
-2022/05/15 -- ver 1.1.1 -- Minor change to C# file explanation: Removed some redundant text  
-2022/05/18 -- ver 1.1.2 -- Ported the regulation to Markdown format 
-2022/06/06 -- ver 1.2.0-en -- Add description of open source license. 
-2022/06/12 -- ver 1.3.0-en -- Modify the forbidden activities.
+2023/04/29 -- Version 2023.04.29-en -- First edition. Almost the same as last year's regulation.
