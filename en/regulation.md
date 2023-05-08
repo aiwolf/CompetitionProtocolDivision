@@ -1,6 +1,6 @@
 # 5th International AIWolf Competition Protocol Division Regulation
 
-Version 2023.04.29-en
+Version 2023.05.09-en
 
 ## Werewolf game rules for the 5th International AIWolf Competition
 
@@ -134,7 +134,7 @@ The recommended Java version is 17. If you use versions other than that, your ag
 
 #### C# Agent
 
-A self-contained console application should be submitted (not a dll, as in previous years). Set the runtime to `linux-x64`, and zip the contents of the directory where it was published. Make sure that the executable file is in the root directory of the zip file. There is no restriction on the file name. Indicate the name of the executable file when submitting. Make sure that your program can understand and proccess the following command line parameters:
+A self-contained console application should be submitted. Set the runtime to `linux-x64`, and zip the contents of the directory where it was published. Make sure that the executable file is in the root directory of the zip file. There is no restriction on the file name. Indicate the name of the executable file when submitting. Make sure that your program can understand and proccess the following command line parameters:
 
 - `-h hostname`: set the name of the aiwolf server to connect to;
 - `-p port`: set the port number to connect to;
@@ -144,7 +144,7 @@ If your agent needs to read any data files, include them in the assembly as reso
 
 #### Python Agent
 
-Submit a zip file. In the root directory of your zip file, you should include the main script to be executed (this is different from previous years). There is no restrictions to the file name. Indicate the name of the main script when submitting. Make sure that the main script can understand and proccess the following command line parameters:
+Submit a zip file. In the root directory of your zip file, you should include the main script to be executed. There is no restrictions to the file name. Indicate the name of the main script when submitting. Make sure that the main script can understand and proccess the following command line parameters:
 
 - `-h hostname`: set the name of the aiwolf server to connect to;
 - `-p port`: set the port number to connect to;
@@ -300,3 +300,4 @@ These regulations are subject to change at any time. Changes will be announced a
 ## Change History
 
 2023/04/29 -- Version 2023.04.29-en -- First edition. Almost the same as last year's regulation.
+2023/05/09 -- Version 2023.05.09-en -- Correct expressions specific to the 4th Int'l Competition.
