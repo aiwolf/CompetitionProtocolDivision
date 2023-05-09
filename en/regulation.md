@@ -291,7 +291,7 @@ com.example.contestant.MyPlayer
 
 Besides Java, we accept entries in Python and C#(.NET). When using these languages, please check their respective libraries. Using TCP-IP libraries for socket communication, and making sure that the correct messages are passed back and forth between server and client, it is possible to participate in the game. When in doubt, please contact the organizing committee: gm@googlegroups.com
 
-However, please note that the contest will be executed in a linux machine, so if you do your development in a different environment, make sure that your code is portable. Clients that cannot run on the server environment will be automatically disqualified. To avoid this situation, please test your agent in the preparatory Games. Also, we made available a docker image of the contest server. Please use it to validate your agent.
+However, please note that the contest will be executed in a linux machine, so if you do your development in a different environment, make sure that your code is portable. Clients that cannot run on the server environment will be automatically disqualified. To avoid this situation, please test your agent in the preparatory Games. Also, we made available a [docker image](https://github.com/users/aiwolf/packages/container/package/aiwolf/) of the contest server. Please use it to validate your agent.
 
 ## Changes
 
@@ -299,5 +299,5 @@ These regulations are subject to change at any time. Changes will be announced a
 
 ## Change History
 
-2023/04/29 -- Version 2023.04.29-en -- First edition. Almost the same as last year's regulation.
-2023/05/09 -- Version 2023.05.09-en -- Correct expressions specific to the 4th Int'l Competition.
+- 2023/04/29 -- Version 2023.04.29-en -- First edition. Almost the same as last year's regulation.
+- 2023/05/09 -- Version 2023.05.09-en -- Correct expressions specific to the 4th Int'l Competition.
