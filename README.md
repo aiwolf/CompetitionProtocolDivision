@@ -1,4 +1,4 @@
-# The 5th International AI Werewolf Competition
+# The 5th International AI Werewolf Competition Protocol Division
 
-- [Regulation](en/regulation.md)
-- [レギュレーション](ja/regulation.md)
+- [English Page](en/README.md)
+- [日本語のページ](ja/README.md)
