@@ -10,21 +10,21 @@ During the preparation period for the final (until August 18, AoE),
 
 | Finalists (in alphabetical order) |
 | --- |
-abe
-cash
-ddhb
-gotsumori
-HO
-Howls
-Howls_02
-Howls03
-inaba
-ioh
-Lunatic
-MayQueen
-mikami
-pronto
-TOT
+| abe |
+| cash |
+| ddhb |
+| gotsumori |
+| HO |
+| Howls |
+| Howls_02 |
+| Howls03 |
+| inaba |
+| ioh |
+| Lunatic |
+| MayQueen |
+| mikami |
+| pronto |
+| TOT |
 
 ## Schedule
 - Registration deadline: 2023-07-21T24:00-12
