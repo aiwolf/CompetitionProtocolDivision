@@ -1,7 +1,9 @@
 # The 5th International AI Werewolf Competition Protocol Division
 
 ## Final Results of the Protocol Division
-In the final, approximately 360,000 games were played, including approximately 180,000 15-person village games and 180,000 5-person village games. The table below shows the teams ranked 1st to 10th in winning percentage.
+In the final, approximately 360,000 games were played, including approximately 180,000 15-person village games and 180,000 5-person village games.
+We added three dummy agents to 15-person village in place of the three declined teams.
+The ranking table is shown below.
 
 | Rank | Team | Kind | Overall | Villager | Seer | Medium | Bodyguard | Werewolf | Possessed |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -16,6 +18,7 @@ In the final, approximately 360,000 games were played, including approximately 1
 9|Howls03|Java|49.1%|54.8%|55.1%|55.2%|56.5%|39.5%|36.1%
 10|Howls|Java|48.5%|55.9%|52.0%|57.8%|57.1%|36.1%|34.8%
 10|MayQueen|Java|48.5%|55.0%|58.2%|56.7%|56.0%|31.6%|38.6%
+12|Howls_02|Java|48.2%|55.6%|54.8%|46.8%|56.8%|36.4%|32.7%
 
 ## Finalists
 After about 244,000 qualifying games, 15 finalists were selected as shown in the table below.
